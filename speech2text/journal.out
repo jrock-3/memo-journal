@@ -1,0 +1,35 @@
+results {
+  alternatives {
+  }
+  result_end_time {
+    seconds: 1
+    nanos: 170000000
+  }
+  language_code: "en-us"
+}
+results {
+  alternatives {
+    transcript: "today has been a crazy day"
+    confidence: 0.952136338
+  }
+  result_end_time {
+    seconds: 4
+    nanos: 620000000
+  }
+  language_code: "en-us"
+}
+results {
+  alternatives {
+    transcript: " after I woke up worried a shit ton about my midterm"
+    confidence: 0.831076443
+  }
+  result_end_time {
+    seconds: 9
+    nanos: 950000000
+  }
+  language_code: "en-us"
+}
+total_billed_time {
+  seconds: 10
+}
+request_id: 5891901142050028049
