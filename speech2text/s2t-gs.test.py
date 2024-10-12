@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 import sys, os
 
-def transcribe_gcs(gcs_uri: str) -> str:
+def transcribe_gcs(gcs_uri: str) -> speech.RecognizeResponse:
     """Asynchronously transcribes the audio file from Cloud Storage
     Args:
         gcs_uri: The Google Cloud Storage path to an audio file.
@@ -20,33 +20,20 @@ def transcribe_gcs(gcs_uri: str) -> str:
 
     operation = client.long_running_recognize(config=config, audio=audio)
 
-    print("Waiting for operation to complete...")
     response = operation.result(timeout=90)
     if response is None:
         raise Exception()
 
-    transcript_builder = []
-    # Each result is for a consecutive portion of the audio. Iterate through
-    # them to get the transcripts for the entire audio file.
-    for result in response.results:
-        # The first alternative is the most likely one for this portion.
-        transcript_builder.append(f"\nTranscript: {result.alternatives[0].transcript}")
-        transcript_builder.append(f"\nConfidence: {result.alternatives[0].confidence}")
-
-    transcript = "".join(transcript_builder)
-    print(transcript)
-
-    return transcript
+    return response
 
 def main():
     load_dotenv()
-    if not (len(sys.argv) == 3 and os.path.isfile(sys.argv[1])):
+    if len(sys.argv) != 2:
         raise Exception()
 
     res = transcribe_gcs(sys.argv[1])
 
-    with open(sys.argv[2], "w") as outfile:
-        outfile.write(repr(res))
+    print("\n".join(result.alternatives[0].transcript for result in res.results))
 
 if __name__ == "__main__":
     main()

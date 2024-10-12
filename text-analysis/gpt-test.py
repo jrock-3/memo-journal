@@ -10,15 +10,16 @@ def quickstart_test(content: str) -> ChatCompletion:
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {
+                "role": "system",
+                "content": str(os.getenv("OPENAI_API_ROLE_DESCRIPTION"))
+            },
             {
                 "role": "user",
-                "content": f"Summarize the following daily journal in paragraph form:\n{content}"
+                "content": content
             }
         ]
     )
-
-    print(completion.choices[0].message.content)
 
     return completion
 
@@ -30,7 +31,7 @@ def main():
 
     with open(sys.argv[1], "r") as infile:
         res = quickstart_test("\n".join(infile.readlines()))
-    print(repr(res))
+        print(res.choices[0].message.content)
 
 if __name__ == "__main__":
     main()

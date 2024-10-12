@@ -22,9 +22,9 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     # object that does not yet exist, set the if_generation_match precondition to 0.
     # If the destination object already exists in your bucket, set instead a
     # generation-match precondition using its generation number.
-    generation_match_precondition = 0
+    # generation_match_precondition = 0
 
-    blob.upload_from_filename(source_file_name, if_generation_match=generation_match_precondition)
+    blob.upload_from_filename(source_file_name)
 
     print(
         f"File {source_file_name} uploaded to {destination_blob_name}."
@@ -32,13 +32,11 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
 
 def main():
     load_dotenv()
+
     if not (len(sys.argv) == 3 and os.path.isfile(sys.argv[1])):
         raise Exception()
 
-    res = upload_blob(os.getenv("GOOGLE_CLOUD_BUCKET_NAME"), sys.argv[1], sys.argv[2])
-
-    with open(sys.argv[2], "w") as outfile:
-        outfile.write(repr(res))
+    upload_blob(os.getenv("GOOGLE_CLOUD_BUCKET_NAME"), sys.argv[1], sys.argv[2])
 
 if __name__ == "__main__":
     main()
