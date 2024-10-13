@@ -21,17 +21,17 @@ error() {
 }
 
 # CHECK PARAMS
-[[ "$#" != "2" ]] && error ${LINENO} "$USAGE"
+[[ "$#" != "1" ]] && error ${LINENO} "$USAGE"
 
 [[ ! -f "$1" ]] && error ${LINENO} "File does not exist: $1"
 audio_file=$(realpath "$1")
 
-if [[ -f "$2" ]] ; then
+outfile="$(basename -- "$1" ".${1##*.}").out"
+if [[ -f "$outfile" ]] ; then
 	read -p "File \"$2\" already exists. Overwrite? [yN] " overwrite
 else
 	overwrite="y"
 fi
-outfile="$2"
 output=""
 
 tmpdir=$(mktemp -d)
@@ -47,13 +47,16 @@ mv "${tmpdir}/converted-wav.wav" "${tmpdir}/converted-wav"
 python3 ../speech2text/gs-upload.test.py "${tmpdir}/converted-wav" "$GOOGLE_CLOUD_TMP_FILE_NAME"
 
 # 3. Perform S2T
-python3 ../speech2text/s2t-gs.test.py "$GOOGLE_CLOUD_TMP_FILE_NAME" > "${tmpdir}/s2t.out"
+# python3 ../speech2text/s2t-gs.test.py "$GOOGLE_CLOUD_TMP_FILE_NAME" > "${tmpdir}/s2t.out"
+python3 ../speech2text/s2t-gs-v2.test.py "$GOOGLE_CLOUD_TMP_FILE_NAME" > "${tmpdir}/s2t.out"
 
 # 4. Pipe into GPT and get a summary
 python3 ../text-analysis/gpt-test.py "${tmpdir}/s2t.out" > "${tmpdir}/gpt.out"
 
 if [[ "${overwrite:-N}" = "y" ]] ; then
-	cat "${tmpdir}/s2t.out" "${tmpdir}/gpt.out" > "$outfile"
+	cat "${tmpdir}/s2t.out" > "$outfile"
+	echo >> "$outfile"
+	cat "${tmpdir}/gpt.out" >> "$outfile"
 else
 	cat "${tmpdir}/s2t.out" "${tmpdir}/gpt.out"
 fi

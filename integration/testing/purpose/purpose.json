@@ -1,0 +1,727 @@
+{
+  "@type": "type.googleapis.com/google.cloud.speech.v1.LongRunningRecognizeResponse",
+  "requestId": "5453414245236678296",
+  "results": [
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9463732,
+          "transcript": "I don't know what happened to that last recording"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "3.260s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9023207,
+          "transcript": " whatever it is"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "8.540s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.6496293,
+          "transcript": " Alicia like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "14.850s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.84621316,
+          "transcript": " I need some sort of purpose you know"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "23.200s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9458224,
+          "transcript": " so hard to do things for myself"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "25.910s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8462413,
+          "transcript": " like why do I even want to leave come"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "33.510s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9165739,
+          "transcript": " cuz it's good for me why is it good for me"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "38.920s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9534951,
+          "transcript": " I need to find meaning in these things"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "43.310s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9136561,
+          "transcript": " I just want like I don't want to think too hard about these things are just want to like do it because because I want to do it"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "53.040s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.78792936,
+          "transcript": " you know it's very simple right"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "56.270s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.66226315,
+          "transcript": " in like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "62.830s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.98240525,
+          "transcript": " I don't know maybe this is just because I have too much time on my hands"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "69.800s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.933728,
+          "transcript": " like I feel like if I'm just distracting myself it just means that when things calm down I was going to feel this way"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "79.100s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9759941,
+          "transcript": " you know like I'm so privileged to have all these things that I want in life"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "85.790s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.88016844,
+          "transcript": " you're somehow"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "90.370s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9682586,
+          "transcript": " you're somehow I don't feel like I have"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "95.020s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9727942,
+          "transcript": " everything"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "97.480s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8976733,
+          "transcript": " I guess I can ask him for everything you know I'm not perfect either"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "102.040s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.86276174,
+          "transcript": " what is yelling at my girlfriend the other night a terrible"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "106.950s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.93234646,
+          "transcript": " I'm coming down just because I'm talking about it but"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "112.410s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8268643,
+          "transcript": " I work what can I do"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "118.070s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.98036706,
+          "transcript": " what can I do"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "121.200s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8775905,
+          "transcript": " I make myself"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "124.190s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.90667576,
+          "transcript": " be purposeful"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "127.600s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.85716075,
+          "transcript": " I want to do something with my life"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "131.880s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.96740925,
+          "transcript": " feel like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "134.090s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.897763,
+          "transcript": " I feel like I don't know"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "141.940s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8926454,
+          "transcript": " feel like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "144.490s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9821992,
+          "transcript": " I feel like I just want to like sit down"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "150.720s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.772972,
+          "transcript": " how long with learn from"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "156s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.93920976,
+          "transcript": " that sounds fun"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "158.150s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9237545,
+          "transcript": " I can only just document that I want to I want to tell my family story tell figure out why why these things happen"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "180.890s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.89898866,
+          "transcript": " or what even happened where we came from what's good about a what's 9"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "187.660s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9034697,
+          "transcript": " good bad ugly so I want to know it all"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "192.030s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.93870914,
+          "transcript": " I feel like I don't I don't really know the stories I don't know where I came from I feel like if I look back maybe I'll find purpose"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "201.740s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.89052683,
+          "transcript": " maybe they're all just starts right there"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "209.590s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.92949533,
+          "transcript": " I should try something right"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "223.210s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.90765643,
+          "transcript": " I could see where"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "226.210s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.86493444,
+          "transcript": " what's your family's doing today"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "229.650s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.5691687,
+          "transcript": " mommy"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "233.710s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.93546927,
+          "transcript": " Mom cell phone looks like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "240.330s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.84469813,
+          "transcript": " Caitlin is also home"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "246.030s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.79048616,
+          "transcript": " Jocelyn and swimming guess she's out"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "249.420s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.385309,
+          "transcript": " gum gum"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "261.200s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9680677,
+          "transcript": " okay yeah"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "264.590s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.7948862,
+          "transcript": " maybe I should just forget work who I am you know how to figure out who I am and you look back"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "273.950s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9740471,
+          "transcript": " I guess I'm just scared to reach out"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "284.530s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.84907454,
+          "transcript": " yeah"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "305.810s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.95955706,
+          "transcript": " but I want to know my story"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "313.070s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.829273,
+          "transcript": " Neverland story"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "320.980s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8049779,
+          "transcript": " I know why things happened why things didn't happen on record it"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "326.370s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9041382,
+          "transcript": " feel like"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "328.760s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8807786,
+          "transcript": " exist without a history and then"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "331.970s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8824662,
+          "transcript": " what is that meant to be in"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "334.620s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9697651,
+          "transcript": " I feel like I'm good at collecting ideas I'm just not good keeping them"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "346.330s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8940446,
+          "transcript": " maybe that's what I should do"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "349.360s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.67002535,
+          "transcript": " my thing was importantly I should fit"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "362.800s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.55706507,
+          "transcript": " set the fuk up stairs down first"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "368.020s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.7900697,
+          "transcript": " I feel like I am build tools that I might have to serve my purpose here"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "379.570s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9293248,
+          "transcript": " and if a tool like summarizing my thoughts"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "385.270s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9528024,
+          "transcript": " it's something that's going to help me and which I think it will"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "390.190s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.82506365,
+          "transcript": " then I think I should work on it"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "394.360s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.9359002,
+          "transcript": " why not"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "396.260s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.91088134,
+          "transcript": " cuz the worst thing to do is contact switch right"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "409.180s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.93607706,
+          "transcript": " and"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "411.060s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.98762906,
+          "transcript": " Adidas"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "414.510s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.77795047,
+          "transcript": " before I can do that again I fix this stuff"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "426.430s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.70114243,
+          "transcript": " so I can give me some motivation"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "428.650s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8856155,
+          "transcript": " I think it's nice"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "433.930s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8046622,
+          "transcript": " let's do it"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "438.230s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.8636964,
+          "transcript": " I like that"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "440.430s"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.91017616,
+          "transcript": " imma go ahead and do that then signing off"
+        }
+      ],
+      "languageCode": "en-us",
+      "resultEndTime": "448.240s"
+    }
+  ],
+  "totalBilledTime": "449s"
+}

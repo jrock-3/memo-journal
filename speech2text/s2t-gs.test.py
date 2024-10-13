@@ -13,12 +13,14 @@ def transcribe_gcs(gcs_uri: str) -> speech.RecognizeResponse:
     """
     client = speech.SpeechClient()
 
-    audio = speech.RecognitionAudio(uri=f"gs://{os.getenv('GOOGLE_CLOUD_BUCKET_NAME')}/{gcs_uri}")
+    GCS_BUCKET=f"gs://{os.getenv('GOOGLE_CLOUD_BUCKET_NAME')}"
+    audio = speech.RecognitionAudio(uri=f"{GCS_BUCKET}/{gcs_uri}")
     config = speech.RecognitionConfig(
         language_code="en-US",
     )
+    output = speech.TranscriptOutputConfig(gcs_uri=f"{GCS_BUCKET}/{gcs_uri}.out")
 
-    operation = client.long_running_recognize(config=config, audio=audio)
+    operation = client.long_running_recognize(config=config, audio=audio, output=output)
 
     response = operation.result(timeout=90)
     if response is None:
