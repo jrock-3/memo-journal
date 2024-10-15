@@ -28,7 +28,7 @@ audio_file=$(realpath "$1")
 
 outfile="$(basename -- "$1" ".${1##*.}").out"
 if [[ -f "$outfile" ]] ; then
-	read -p "File \"$2\" already exists. Overwrite? [yN] " overwrite
+	read -p "File \"$outfile\" already exists. Overwrite? [yN] " overwrite
 else
 	overwrite="y"
 fi
@@ -40,17 +40,20 @@ trap "rm -rf $tmpdir" EXIT
 . "../memo-journal/bin/activate"
 
 # 1. Convert audio file to .wav
-ffmpeg -y -i "$audio_file" -ac 1 "${tmpdir}/converted-wav.wav"
+echo "Converting $audio_file to WAV.."
+ffmpeg -y -hide_banner -loglevel error -i "$audio_file" -ac 1 "${tmpdir}/converted-wav.wav"
 mv "${tmpdir}/converted-wav.wav" "${tmpdir}/converted-wav"
 
 # 2. Upload to GS
-python3 ../speech2text/gs-upload.test.py "${tmpdir}/converted-wav" "$GOOGLE_CLOUD_TMP_FILE_NAME"
+echo "Uploading file to Google Cloud Storage Bucket.."
+python3 ../speech2text/gs-upload.test.py "${tmpdir}/converted-wav" "$GOOGLE_CLOUD_TMP_FILE_NAME" >/dev/null
 
 # 3. Perform S2T
-# python3 ../speech2text/s2t-gs.test.py "$GOOGLE_CLOUD_TMP_FILE_NAME" > "${tmpdir}/s2t.out"
+echo "Processing speech to text.."
 python3 ../speech2text/s2t-gs-v2.test.py "$GOOGLE_CLOUD_TMP_FILE_NAME" > "${tmpdir}/s2t.out"
 
 # 4. Pipe into GPT and get a summary
+echo "Summarizing journal.."
 python3 ../text-analysis/gpt-test.py "${tmpdir}/s2t.out" > "${tmpdir}/gpt.out"
 
 if [[ "${overwrite:-N}" = "y" ]] ; then

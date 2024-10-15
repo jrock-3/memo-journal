@@ -52,7 +52,7 @@ def transcribe_batch_gcs_input_gcs_output_v2(
     operation = client.batch_recognize(request=request)
 
     # print("Waiting for operation to complete...")
-    response = operation.result(timeout=120)
+    response = operation.result(timeout=600)
 
     file_results = response.results[audio_uri]
 
